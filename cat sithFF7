@@ -1,0 +1,23 @@
+from graphics import *
+from fighters import *
+#manshi K
+class CatSith(Fighters): #catsith is a fighter
+    def __init__(self, win):
+        super().__init__("Cat Sith",200, 10, 3, 25) #inputs cat siths statistics
+                                                    # into fighter to get statistics displayed
+    def displayCat(self, win:GraphWin):
+        cat = Image(Point(500,500), "images/cat sith image.PNG")
+        cat.draw(win)
+
+def main():
+    win = GraphWin("Cat show", 1500, 800)
+    win.setBackground("White")
+    cat = CatSith(win)
+    cat.displayCat(win)#display cat siths image
+    cat.displayFighterStats(win)#displays all cat siths statistics
+
+    win.getMouse()
+    win.close()
+
+if __name__ == '__main__':
+    main()
