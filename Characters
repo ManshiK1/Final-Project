@@ -1,0 +1,14 @@
+
+from Tifaff7 import *
+from cloudff7 import *
+from Aerithff7 import *
+class Characters:
+    def __init__(self):
+        super(Characters, self).__init__()
+    def heroes(self):#Isa O
+        heroes=["Cloud Strife","Tifa Lockhart","Aerith Gainsborough"]
+
+    def villians(self):
+        villians=["Sephiroth", "Cait Sith", "Rude"]
+
+        
